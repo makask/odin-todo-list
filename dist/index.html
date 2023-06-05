@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <div class="title">
+          <div class="icon-background">
+            <img src="icons/task.svg" alt="" />
+          </div>
+          <h1>Todo List</h1>
+        </div>
+      </header>
+      <div class="main">
+        <div class="left">
+          <div class="left-panel">
+            <button class="button home">Home</button>
+            <button class="button today">Today</button>
+            <button class="button week">Week</button>
+            <button class="button add-new-task-button">Add Task-></button>
+          </div>
+          <div class="projects">
+            <div class="project-header-div">
+              <p class="projects-label">Projects</p>
+              <button class="button add-project-btn">+ New Project</button>
+            </div>
+            <div class="add-projects">
+              <form class="add-project-form hidden" action="">
+                <div>
+                  <input
+                    class="input-pr-name"
+                    type="text"
+                    placeholder="Project name"
+                    required
+                  />
+                  <div class="add-proj-btns">
+                    <button type="submit" class="add-new-project-btn">
+                      Add
+                    </button>
+                    <button class="cancel-new-project-btn">Cancel</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="project-items"></div>
+          </div>
+        </div>
+        <div class="middle">
+          <div class="folder-active">
+            <p class="title-folder"></p>
+            <button class="button add-new-project-task hidden">
+              New Task ↓↓↓
+            </button>
+          </div>
+          <div class="tasks"></div>
+        </div>
+      </div>
+    </div>
+    <dialog class="add-task" id="modal">
+      <h2 id="add-task-form-label">Add New Task</h2>
+      <form class="add-task-form" method="dialog">
+        <input type="text" id="task" placeholder="Task" required />
+        <div class="add-task-form-buttons">
+          <button class="button submit-task-button" type="submit">
+            Add Task
+          </button>
+          <button class="button close-task-modal-button">close modal</button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog class="add-project-task" id="modal-proj-task">
+      <h2 id="add-project-task-form-label">Add New Project Task</h2>
+      <form class="add-project-task-form" method="dialog">
+        <input type="text" id="project-task" placeholder="Task" required />
+        <div class="add-project-task-form-buttons">
+          <button class="button submit-project-task-button" type="submit">
+            Add Task
+          </button>
+          <button class="button close-project-task-modal-button">
+            close modal
+          </button>
+        </div>
+      </form>
+    </dialog>
+    <script src="main.js"></script>
+  </body>
+</html>
