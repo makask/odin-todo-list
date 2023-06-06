@@ -191,39 +191,6 @@ input[type='date'] {
   display: flex;
 }
 
-.task-item,
-.project-task-item {
-  display: flex;
-  align-items: center;
-  width: 81vw;
-  border: 2px solid lightblue;
-  margin-bottom: 10px;
-  min-height: 5rem;
-  border-radius: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.task,
-.project-task {
-  cursor: pointer;
-  width: 200px;
-}
-
-.task-title-div,
-.task-details-div,
-.task-priority-div,
-.project-task-title-div,
-.project-task-details-div,
-.project-priority-div {
-  display: flex;
-  align-items: center;
-}
-.project-task-title-div,
-.task-title-div {
-  width: 500px;
-  margin-left: 1rem;
-}
-
 .buttons-div,
 .project-buttons-div {
   display: flex;
@@ -231,12 +198,6 @@ input[type='date'] {
   height: 4rem;
   width: 400px;
   gap: 5px;
-}
-
-.task-details-div,
-.project-details-div {
-  width: 500px;
-  position: relative;
 }
 
 .task-details-input,
@@ -255,10 +216,6 @@ input[type='date'] {
   gap: 10px;
 }
 
-input[type='checkbox'] {
-  margin-left: 1.2rem;
-}
-
 .visible {
   visibility: visible;
 }
@@ -267,25 +224,12 @@ input[type='checkbox'] {
   visibility: hidden;
 }
 
-.task-item-input,
-.project-task-item-input {
-  height: 1rem;
-  position: relative;
-  right: 40px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 .task-details-label,
 .project-task-details-label {
   cursor: pointer;
 }
-.project-task-item-input,
-.task-item-input {
-  right: 200px;
-}
 
-.project-date-div,
+.project-task-date-div,
 .task-date-div {
   display: flex;
   align-items: center;
@@ -374,7 +318,7 @@ input[type='checkbox'] {
   display: flex;
   margin-top: 12px;
   height: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   width: 81vw;
 }
 
@@ -511,4 +455,62 @@ input[type='checkbox'] {
 
 .project-item-del-btn:hover {
   background-color: rgb(211, 80, 80);
+}
+
+.task-item,
+.project-task-item {
+  display: flex;
+  align-items: center;
+  width: 81vw;
+  border: 2px solid lightblue;
+  margin-bottom: 10px;
+  min-height: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type='checkbox'] {
+  margin-left: 1.2rem;
+}
+
+.task-title-div,
+.task-details-div,
+.task-priority-div,
+.project-task-title-div,
+.project-task-details-div,
+.project-priority-div {
+  display: flex;
+  align-items: center;
+}
+
+.task-title-div,
+.project-task-title-div {
+  width: 500px;
+  margin-left: 1rem;
+}
+
+.task,
+.project-task {
+  cursor: pointer;
+  width: 200px;
+}
+
+.task-item-input,
+.project-task-item-input {
+  height: 1rem;
+  position: relative;
+  right: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-task-item-input,
+.task-item-input {
+  right: 200px;
+}
+
+.task-details-div,
+.project-task-details-div {
+  width: 500px;
+  position: relative;
 }

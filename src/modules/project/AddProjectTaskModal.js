@@ -27,7 +27,7 @@ export default class AddProjectTaskModal {
           ProjectHtmlElement.getProjectId(),
           newTask
         );
-        ProjectTaskRenderer.renderProjectTasks(
+        ProjectTaskRenderer.renderWorkingFolder(
           ProjectHtmlElement.getProjectId()
         );
       });

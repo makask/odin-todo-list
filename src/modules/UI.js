@@ -52,7 +52,6 @@ export default class UI {
           Folder.getFolder() === `${projectName} -> Week`
         ) {
           Folder.setFolder(`${projectName} -> Today`);
-          console.log(Folder.getFolder());
           Folder.setTodayBtnActive();
           ProjectTaskRenderer.renderTodaysProjectTasks(
             ProjectHtmlElement.getProjectId()
@@ -84,7 +83,6 @@ export default class UI {
           Folder.getFolder() === `${projectName} -> Today`
         ) {
           Folder.setFolder(`${projectName} -> Week`);
-          console.log(Folder.getFolder());
           Folder.setWeekBtnActive();
           ProjectTaskRenderer.renderWeeksProjectTasks(
             ProjectHtmlElement.getProjectId()
