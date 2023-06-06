@@ -21,7 +21,10 @@ export default class ProjectTaskHtmlElement {
         event.target.id,
         checkBox.checked
       );
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      //ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     // Create title
@@ -72,7 +75,7 @@ export default class ProjectTaskHtmlElement {
         taskUpdateInput.classList.add('hidden');
         task.classList.remove('hidden');
         task.classList.add('visible');
-        ProjectTaskRenderer.renderProjectTasks(
+        ProjectTaskRenderer.renderWorkingFolder(
           ProjectHtmlElement.getProjectId()
         );
       }
@@ -128,7 +131,7 @@ export default class ProjectTaskHtmlElement {
         detailsInput.classList.add('hidden');
         details.classList.remove('hidden');
         details.classList.add('visible');
-        ProjectTaskRenderer.renderProjectTasks(
+        ProjectTaskRenderer.renderWorkingFolder(
           ProjectHtmlElement.getProjectId()
         );
       }
@@ -180,7 +183,9 @@ export default class ProjectTaskHtmlElement {
         id,
         event.target.value
       );
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     // Create buttons
@@ -219,7 +224,9 @@ export default class ProjectTaskHtmlElement {
         id,
         'low'
       );
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     mediumBtn.addEventListener('click', (event) => {
@@ -228,7 +235,9 @@ export default class ProjectTaskHtmlElement {
         id,
         'medium'
       );
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     highBtn.addEventListener('click', (event) => {
@@ -237,12 +246,16 @@ export default class ProjectTaskHtmlElement {
         id,
         'high'
       );
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     deleteBtn.addEventListener('click', () => {
       LocalStorage.deleteProjectTask(ProjectHtmlElement.getProjectId(), id);
-      ProjectTaskRenderer.renderProjectTasks(ProjectHtmlElement.getProjectId());
+      ProjectTaskRenderer.renderWorkingFolder(
+        ProjectHtmlElement.getProjectId()
+      );
     });
 
     taskElement.append(

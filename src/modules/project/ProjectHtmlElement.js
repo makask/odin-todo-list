@@ -32,6 +32,7 @@ export default class ProjectHtmlElement {
     projectName.addEventListener('click', (event) => {
       this.projectId = event.target.id;
       Folder.setFolder(LocalStorage.getProjectName(event.target.id));
+      Folder.removeActive();
       ProjectRenderer.renderAddProjectTaskBtn();
       // Render project tasks
       ProjectTaskRenderer.renderProjectTasks(this.projectId);
