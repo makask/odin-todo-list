@@ -16,6 +16,7 @@ Features
   - You can mark task priority as low, medium or high
   - You can delete task
   - You can add new projects which have their own tasks
+  - You can switch between projects
   - You can assign new task to a project 
   - You can view all project tasks
   - You can view all todays project tasks
