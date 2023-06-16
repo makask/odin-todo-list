@@ -26,4 +26,6 @@ Features
   - You can delete project task
   - You can delete a project 
  
+ Page is not responsive.
+ 
  ![image](https://github.com/makask/odin-todo-list/assets/16080688/726e42e2-f4be-4eb9-bedb-7259c1612ccd)
